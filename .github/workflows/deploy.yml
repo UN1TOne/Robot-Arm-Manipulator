@@ -1,12 +1,8 @@
-# GitHub Pages 배포를 위한 워크플로우
 name: Deploy Next.js to GitHub Pages
 
 on:
-  # master 브랜치에 push 될 때마다 실행 (main 브랜치라면 main으로 변경)
   push:
     branches: ["master"]
-
-  # 수동으로 실행 가능하게 설정
   workflow_dispatch:
 
 permissions:
@@ -19,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # 빌드 작업
   build:
     runs-on: ubuntu-latest
     steps:
@@ -53,7 +48,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # Next.js 설정에 따라 자동으로 static export 설정 주입
           static_site_generator: next
 
       - name: Restore cache
@@ -76,7 +70,6 @@ jobs:
         with:
           path: ./out
 
-  # 배포 작업
   deploy:
     environment:
       name: github-pages
