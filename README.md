@@ -3,7 +3,7 @@
 A web-based interactive 3D robot arm simulator built with **Next.js**, **React Three Fiber (R3F)**, and **TypeScript**.
 This project demonstrates **Forward Kinematics**, allowing users to control joint rotations in real-time through a synchronized UI.
 
-🔗 **Live Demo:** [[Insert Your GitHub Pages Link Here]](https://un1tone.github.io/Robot-Arm-Manipulator/)
+🔗 **Live Demo:** [https://un1tone.github.io/Robot-Arm-Manipulator/)](https://un1tone.github.io/Robot-Arm-Manipulator/)
 <img width="1900" height="941" alt="Image" src="https://github.com/user-attachments/assets/d88a78b6-7b7d-4f2b-81c6-c8030bd5ba02" />
 
 ## 📂 Project Structure
